@@ -3,13 +3,17 @@ setup = function() {
     size(600, 400);
     background(255,255,255,0);
     
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+    
+    drawBooks(250,250,color(1,1,1));
+  
 };
-
+  var penX = 200;
 //🟢draw Function - will run on repeat
 draw = function(){
-
+  drawPen(penX, 200, color(1,0,1)); 
+ penX = penX + 1;
+if (penx > 250){
+  penX = penX - 1}
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
@@ -18,11 +22,20 @@ mouseClicked = function(){
 }
 
 //🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
+var drawPen = function(penX, penY, penColor){
   textSize(80);
-  fill(fishColor);
-  text("𓆝", fishX, fishY);
+  fill(penColor);
+  text("🖋", penX, penY);
+ 
 };
+//drawBooks Function
+var drawBooks = function(bookX ,bookY,bookColor){
+  fill(bookColor);
+  text("📚", bookX, bookY);
+
+};
+
+
 
 
 

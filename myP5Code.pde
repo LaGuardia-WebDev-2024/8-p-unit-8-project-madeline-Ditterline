@@ -10,7 +10,7 @@ setup = function() {
   var penX = 200;
 //🟢draw Function - will run on repeat
 draw = function(){
-  drawPen(penX, 200, color(1,0,1)); 
+  drawPen(penX, 200, color(100,100,100)); 
  penX = penX + 1;
 if (penx > 250){
   penX = penX - 1}

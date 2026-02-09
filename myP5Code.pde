@@ -29,7 +29,7 @@ mouseClicked = function(){
 
 }
 
-//🟡drawFish Function - will run when called
+//drawPen function
 var drawPen = function(penX, penY, penColor){
   textSize(80);
   fill(penColor);
